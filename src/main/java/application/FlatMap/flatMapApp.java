@@ -1,7 +1,9 @@
 package application.FlatMap;
 
-import java.util.*;
-import java.util.function.Function;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -22,7 +24,7 @@ public class flatMapApp {
         List<Integer> EvenNumbers = Arrays.asList(2, 4, 6, 8, 10);
         List<List<Integer>> megaList = Arrays.asList(PrimeNumbers, OddNumbers, EvenNumbers);
         System.out.println(megaList);
-        List<Integer> listInt = megaList.stream().flatMap(integers -> integers.stream()).collect(Collectors.toList());
+        List<Integer> listInt = megaList.stream().flatMap(Collection::stream).collect(Collectors.toList());
         System.out.println(listInt);
     }
 

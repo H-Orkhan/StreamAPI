@@ -1,8 +1,12 @@
 package application.MapperIntExample;
 
-public  class  User {
-    private  String name;
-    private  int age = 30;
+public class User {
+    private String name;
+    private int age = 30;
+
+    public User(String name) {
+        this.name = name;
+    }
 
     @Override
     public String toString() {
@@ -10,10 +14,6 @@ public  class  User {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
-    }
-
-    public User(String name) {
-        this.name=name;
     }
 
     public String getName() {

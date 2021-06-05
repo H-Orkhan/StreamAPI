@@ -2,15 +2,19 @@ package application.FlatMap;
 
 import java.util.List;
 
-public  class  User {
-    private  String name;
-    private  int age = 30;
-    private List<String > PhoneNumbers;
+public class User {
+    private String name;
+    private int age = 30;
+    private List<String> PhoneNumbers;
 
     public User(String name, int age, List<String> phoneNumbers) {
         this.name = name;
         this.age = age;
         PhoneNumbers = phoneNumbers;
+    }
+
+    public User(String name) {
+        this.name = name;
     }
 
     public List<String> getPhoneNumbers() {
@@ -27,10 +31,6 @@ public  class  User {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
-    }
-
-    public User(String name) {
-        this.name=name;
     }
 
     public String getName() {

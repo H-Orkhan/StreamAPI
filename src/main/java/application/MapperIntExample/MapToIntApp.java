@@ -2,9 +2,7 @@ package application.MapperIntExample;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.OptionalDouble;
-import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 //MapToInt is using to collect all int values from stream and can do a lot of things with it such a
